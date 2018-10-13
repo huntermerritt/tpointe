@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="We Want Tucker Wilkie for TCU Student Body President">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Turning Pointe</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script style="https://cdnjs.com/libraries/bulma"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    <link rel="shortcut icon" href="{{ url_for('static', filename='myfavicon.ico') }}">
+</head>
+<style>
+
+    body
+    {
+        font-family: Roboto, sans-serif;
+        color: #403F45;
+        background-color: #403F45;
+
+    }
+    
+    i
+    {
+        font-size: 4em;
+    }
+    
+
+</style>
+<body>
+
+<div class="navbar navbar-light" style="height: 15vh; background-color: #403F45;">
+
+    <h3 style="color: white;">Turning Pointe</h3>
+
+    <div class="btn-group">
+        <a class="btn btn-warning" href="#about-us">About Us</a>
+        <a class="btn btn-warning" href="#projects">Past Projects</a>
+        <a class="btn btn-warning" href="#contact">Contact Us</a>
+    </div>
+
+</div>
+
+<div class="container-fluid" style="background-color: white;">
+
+    <div class="row" style="height: 85vh; overflow-y: scroll;">
+
+        <div class="col-12" style="height: 5vh;"></div>
+
+        <div class="col-12" id="about-us">
+
+            <div class="row">
+
+                <div class="col-4">
+
+
+                    <div style="text-align: center">
+                        <i class="fas fa-clock text-warning"></i>
+                        <br>
+                        <h4>Fast</h4>
+                        <hr>
+                        <br>
+                        <p>We bring you timely help with all of your window treatment needs. We look forward to serving you as fast and efficiently as possible.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+
+
+                    <div style="text-align: center;">
+                        <i class="fas fa-shield-alt text-warning"></i>
+                        <br>
+                        <h4>Quality</h4>
+                        <hr>
+                        <br>
+                        <p>We bring you only the most quality brands for your window treatment needs. We also provide our expertise in installation and measuring.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+
+
+                    <div style="text-align: center">
+                        <i class="fas fa-user-circle text-warning"></i>
+                        <br>
+                        <h4>Professional</h4>
+                        <hr>
+                        <br>
+                        <p>We provide our services with the utmost professionalism that only comes with being in business for over 15 years.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12" style="height: 5vh;"></div>
+
+
+                <div class="col-12 bg-warning" style="text-align: center;">
+                    <div style="height: 5vh"></div>
+                    <h3>All our work is done in house with certified installers.</h3>
+                    <div style="height: 5vh"></div>
+                </div>
+
+                <div class="col-12" style="height: 5vh;"></div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="col-12" id="projects">
+
+            <div class="row">
+
+                <div class="col-12" style="height: 10vh; text-align: center;">
+                    <div style="height: 3vh"></div>
+                    <h3>Our Past Projects</h3>
+                </div>
+
+                <div class="col-6" style="text-align: center;">
+
+                    <img src="../static/blinds.png" style="height: 20vw; width: 20vw; border-radius: 50%">
+                    <br>
+                    <br>
+
+                    <h4>Blinds</h4>
+                    <hr>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Norman</li>
+                        <li class="list-group-item">Hunter Douglas</li>
+                        <li class="list-group-item">Lafayette</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-6" style="text-align: center;">
+
+                    <img src="../static/shutter.JPG" style="height: 20vw; width: 20vw; border-radius: 50%">
+                    <br>
+                    <br>
+
+                    <h4>Shutters</h4>
+                    <hr>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">Norman</li>
+                        <li class="list-group-item">Hunter Douglas</li>
+                        <li class="list-group-item">Lafayette</li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-12" style="height: 5vh;"></div>
+
+        <div class="col-12 text-warning" id="contact" style="background-color: #403F45;">
+            <div style="height: 5vh;"></div>
+            <h3>Contact Us:</h3>
+            <p>We would love to hear from you.</p>
+            <a href="" class="btn btn-warning">Contact</a>
+            <div style="height: 5vh;"></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
